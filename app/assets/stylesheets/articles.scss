@@ -13,6 +13,10 @@ h2 > a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-weight: lighter;
+}
+
 .form-container {
   display: flex;
   justify-content: space-around;
@@ -22,6 +26,7 @@ h2 > a:hover {
     width: 100%;
     font-weight: bolder;
   }
+  padding: 20px;
 }
 
 .form-control.large {
@@ -33,5 +38,21 @@ h2 > a:hover {
   padding: 5px 10px;
   &:hover {
     background-color: rgb(240,240,240);
+  }
+}
+
+.options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links a {
+  font-size: 32px;
+  margin: 10px;
+  color: #2B88C7;
+  &:hover {
+    color: #89BADE;
   }
 }
