@@ -1,0 +1,23 @@
+<div class="form-container text-center">
+  <%= form_for(@article, class: "inline-block") do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <br>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :content %>
+      <br>
+      <%= f.text_area :content, class: "form-control large"%>
+    </div>
+
+    <%= f.submit class: "button" %>
+  <% end %>
+</div>
+<div class="text-center">
+  <% if @article.persisted? %>
+    <%= link_to "Back", article_path(@article) %>
+  <% else %>
+    <%= link_to "Back", articles_path %>
+  <% end %>
+</div>

@@ -1,0 +1,37 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h2 > a {
+  color: rgb(35, 119, 186);
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+h2 > a:hover {
+  color: rgb(26, 80, 126);
+  text-decoration: underline;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  form {
+    width: 100%;
+    font-weight: bolder;
+  }
+}
+
+.form-control.large {
+  height: 300px;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  &:hover {
+    background-color: rgb(240,240,240);
+  }
+}
